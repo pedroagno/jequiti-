@@ -1,0 +1,524 @@
+*{
+	margin:0;
+	padding:0;
+}
+.container{
+	display: grid;
+	height:100vh;
+	grid-template-columns:0.6fr 1fr 1fr 1fr;
+	grid-template-rows:0.5fr 2fr 1.2fr 1.8fr 1fr 1fr;
+	grid-template-areas: "nav nav nav nav"
+						 "sidebar main8 main8 main8"
+						"sidebar conteudo1 conteudo2 conteudo3 "
+						"sidebar conteudo4 conteudo4 conteudo4 "
+						"body body body body"
+						"footer footer footer footer";
+    grid-gap:0.5em;
+	/*font-size:16px;
+	font-family: tahoma;
+	text-align:center;
+	font-weight: 800;*/
+						
+}
+.container1{
+	display: grid;
+	height:100vh;
+	grid-template-columns:1fr 1fr 1fr;
+	grid-template-rows:1fr 1fr 1fr;
+	grid-template-areas: "nav nav nav "
+						 "article1 article1 article1"
+						 "article2 article2 article2 "
+						 "article3 article3 article3";
+    grid-gap:0.5em;
+	/*font-size:16px;
+	font-family: tahoma;
+	text-align:center;
+	font-weight: 800;*/
+						
+}
+
+
+#nav{
+	
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	justify-content:space-around;
+	background-color:#BA55D3 ;
+	grid-area:nav;
+	border-radius:0 0 3em 3em;
+	right:2px;
+	float:right;
+	height:9%;
+	width:100%;
+	border: solid white 5px;
+	position:fixed;
+	
+}
+header{
+	background-color: rgb(132, 13, 201);
+	border-radius:0 0 3em 3em;
+	justify-content:space-around;
+	display: flex;
+	flex-direction:row;
+	justify-content:space-between;
+	height:100%;
+	width:100%;	
+	border: solid white 5px;
+}
+#mena a{
+	text-decoration:none;
+	font-size:15px;
+	margin-left:15px;
+	padding: 15px;
+	color:white;
+	
+}
+#mena a:hover{
+	color: rgb(132, 14, 201);
+	transition: 0.3s all;
+}
+
+#nav1{
+	display:flex;
+	justify-content:space-between;
+	right:20px;
+	height:100%;
+	width:100%;
+	
+	
+}
+#nav img{
+	height:90px;
+	width:100px ;
+	
+}
+#menu a{
+
+	text-decoration:none;
+	font-size:15px;
+	margin-left:15px;
+	padding: 15px;
+	color:white;
+}
+#menu a:hover{
+	color: rgb(132, 14, 201);
+	transition: 0.3s all;
+}
+#inscreva-se-btn{
+	border: 2px solid white;
+}
+#main{
+	background-image:url(imagens/banner.webp);
+	background-repeat:no-repeat;
+	grid-area:main8;
+	border-radius:0.5em;
+	height:80vh;
+	width:100%;
+	
+}
+
+#sidebar{
+	background-color:white;
+	grid-area:sidebar;
+	border-radius:0.5em;
+	height:70vh;
+	width:35vh;
+}
+#larissa img{
+	height:100%;
+	width:100%;
+}
+#sun img{
+	height:100%;
+	width:100%;
+}
+#mulher img{
+	height:100%;
+	width:100%;
+}
+#faro img{
+	height:100%;
+	width:100%;
+}
+#conteudo1{
+	background-color:white;
+	grid-area:conteudo1;
+	border-radius:0.5em;
+	border:solid gray 0.2px;
+	height:100%;
+	width:100%;
+	
+}
+#perfume h1{
+	font-weight: 200px;
+	font-size:12px;
+	color:purple;
+
+}
+
+#conteudo1 img{
+	display:flex;
+	text-align:center;
+	height:55%;
+	width:50%;
+	display: flex;
+	margin:auto;
+}
+
+#conteudo2{
+	background-color:white;
+	grid-area:conteudo2;
+	border-radius:0.5em;
+	border:solid gray 0.2px;
+		height:100%;
+	width:100%;
+}
+
+#perfume1 h2{
+
+}
+#conteudo2 img{
+	height:55%;
+	width:50%;
+	display: flex;
+	margin:auto;
+}
+#conteudo3{
+	background-color: white;
+	grid-area:conteudo3;
+	border-radius:0.5em;
+	border:solid gray 0.2px;
+		height:100%;
+	width:100%;
+	
+}
+#perfume2 h1{
+	font-weight: 200px;
+	font-size:12px;
+	color:purple;
+}
+#perfume1 h1{
+		font-weight: 200px;
+	font-size:12px;
+	color:purple;
+}
+#conteudo3 img{
+	height:55%;
+	width:50%;
+	display: flex;
+	
+	margin:auto;
+}
+#conteudo4{
+	background-color:rgb(132, 14, 201);
+	grid-area:conteudo4;
+	border-radius:0.5em;
+	height:30vh;
+	width:167vh;
+	display: flex;
+	align-items:center;
+	justify-content:space-between;
+	justify-content:around;
+}
+
+
+
+#conteudo4 h1{
+	display:flex-center;
+	color:white;
+
+	font-size:20px;
+	top:80px;
+}
+
+#legenda h1{
+	text-align:top;
+	text-align:center;
+	color:white;
+	float:top;	
+}
+#legenda span{
+	color:#53f1ff;
+}
+
+
+#rosto1 img{
+	border: double white 10px;
+	border-radius:100px;
+	height:150px;
+	width:150px;
+}
+#rosto2 img{
+	border: double white 10px;
+	border-radius:100px;
+	height:150px;
+	width:150px;
+}
+#rosto3 img{
+	border: double white 10px;
+	border-radius:100px;
+	height:150px;
+	width:150px;
+
+}
+
+#footer{
+	background-color:#BA55D3;
+	grid-area:footer;
+	height:100%;
+	width:100%;
+	border-top: 30px solid purple;
+}
+#footer > ol{
+	display:flex;
+	list-style-type: none;
+}
+#footer h1{
+	color:#53f1ff;
+	text-align:center;
+}
+#footer h2{
+	text-align:center;
+}
+#variedades{
+	color:BLACK;
+	text-align:center;
+	text-align:justify-content;
+
+}
+#variedades1{
+	color:BLACK;
+	text-align:left;
+	margin-top:-126px;
+	text-align:justify-content; 
+}
+#variedades2{
+	color:BLACK;
+	text-align:right;
+	margin-top:-126px;
+	text-align:justify-content;
+}
+
+body{
+	background-color:#fffbc9;
+	   font-family:var(--fonte);
+}
+:root{
+ 
+    --fonte: 'Roboto', arial, sans-serif;
+}
+
+.bg{
+	/*background-image: url("imagens/cadastro/PAREDE.jpg");*/
+	background-color:black;
+	background-size:100%;
+	background-attachment:fixed;
+	color:white;
+	
+	max-width: 1200px;
+	margin: 0 auto;
+	padding:15px;
+	   font-family:var(--fonte);
+}
+
+#nav1{
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	justify-content:space-around;
+	background-color: #BA55D3 ;
+	grid-area:nav;
+	border-radius:0 0 3em 3em;
+	right:20px;
+	float:right;
+}
+#nav1 img{
+	height:100px;
+	width:200px ;
+	
+}
+.prin{
+	display:flex;
+	flex-direction: row;
+	margin-top:15vh;
+}
+.prin h1{
+	font-size:40px;
+	
+
+	line-height:25px;
+	}
+	span{
+		color:#BA55D3;
+	}
+article img{
+	height:500px;
+	width:600px;
+	transform: translatey(0px);
+	animation:float 5s ease-in-out infinite;
+}
+.prin p{
+	line-height:20px;
+	max-width:1000px;
+}
+
+@keyframes float{
+	0%{
+		transform:translatey(0px);
+	}
+	50%{
+		transform:translatey(-30px);
+	}
+	100%{
+		transform:translatey(0px);
+	}
+}
+
+#hr1{
+	color:white;
+	margin:20px;
+	}
+	#formulario{
+		background-color:purple;
+		margin:20px;
+		padding:20px;
+		border-radius:20px;
+		border:solid white 2px;
+		display:flex;
+		justify-content:center;
+	}
+.container7{
+	display:grid;
+	height:100vh;
+	grid-template-columns:1fr;
+	grid-template-rows:1.2fr 0.8fr 1.5fr 0.5fr;
+	grid-template-areas:"nav7"
+						"main7"
+						"conteudo7"
+						"footer7"; 
+	grid-gap:0.5em;
+}
+.container9{
+	display:grid;
+	height:100vh;
+	grid-template-columns:1fr;
+	grid-template-rows:1.2fr 0,8fr 1.5fr 0.5fr;
+	grid-template-areas:"nav7"
+						"main4"
+						"conteudo7"
+						"footer7"; 
+	grid-gap:0.5em;
+}
+#main4{
+	background-image:url(imagens/cadastro/PAREDE.jpg);
+	background-repeat:no-repeat;
+	grid-area:main7;
+	border-radius:0.5em;
+	height:95vh;
+	width:100%;
+}
+#main4 img{
+	height:100%;
+	width:100%;
+	border-radius:10px;
+}
+#nav7{
+display:flex;
+	align-items:center;
+	justify-content:space-between;
+	justify-content:space-around;
+	background-color:#BA55D3 ;
+	grid-area:nav;
+	border-radius:0 0 3em 3em;
+	right:2px;
+	float:right;
+	height:9%;
+	width:100%;
+	border: solid white 5px;
+	position:fixed;
+	
+}
+#nav7 img{
+	
+} 
+#menu a{
+	text-decoration:none;
+	font-size:15px;
+	
+	color:white;
+}
+#inscreva-se-bt{
+	border: 2px solid white;
+}
+#menu a:hover{
+	color:purple;
+}
+
+#main8 img{
+	height:120%;
+	width:100%;
+}
+:root{
+ 
+    --fonte: 'Roboto', arial, sans-serif;
+}
+
+#main8{
+	background-image:url(imagens/cadastro/PAREDE.jpg);
+	background-repeat:no-repeat;
+	grid-area:main7;
+	border-radius:0.5em;
+	height:80vh;
+	width:100%;
+}
+#main8 img{
+	height:100%;
+	width:100%;
+}
+
+#conteudo7{
+	background-color: rgb(132, 14, 201);
+	grid-area:conteudo7;
+	border-radius:0.8em;
+	border:solid white 5px;
+	height:50vh;
+	width:100%;
+}
+#conteudo7 h1{
+	color:black;
+	text-align:center;
+	border:solid white 2px;
+}
+#conteudo7 h2{
+	color:white;
+	text-align:justify;
+	font-size:18px;
+}
+#footer7{
+	background-color:#BA55D3;
+	grid-area:footer7;
+	border-top: 30px solid purple;
+	height:60%;
+	width:100%;
+}
+#footer7 > ol{
+	display:flex;
+	list-style-type: none;
+}
+#footer7 h1{
+	text-align:center;
+	color:#53f1ff;
+	
+}
+#footer7 h2{
+	text-align:center;
+}
+.bk{
+	background-color:purple;
+	 font-family:var(--fonte);
+}
+:root{
+  font-family:var(--fonte);
+    --fonte: 'Roboto', arial, sans-serif;
+}
